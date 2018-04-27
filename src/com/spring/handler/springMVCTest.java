@@ -20,26 +20,54 @@ import java.util.Map;
  * @version $Id: springMVCTest.Java, v 0.1 2018/4/17 18:06 zy28313 Exp $
  */
 @RequestMapping("/springmvc")
-//@SessionAttributes(value = {"user"}, types = {String.class})//只能放在类上
+@SessionAttributes(value = {"user"}, types = {String.class})//只能放在类上
 @Controller
 public class springMVCTest {
 
     private static final String SUCCESS = "success";
 
+    @RequestMapping("/testRedirect")
+    public String testRedirect() {
+        System.out.println("testRedirect");
+        return "redirect:/index.jsp";
+    }
+
+    @RequestMapping("/testView")
+    public String testView() {
+        System.out.println("testView");
+        return "helloView";
+    }
+
+    @RequestMapping("/testViewAndViewResolver")
+    public String testViewAndViewResolver() {
+        System.out.println("testViewAndViewResolver");
+        return SUCCESS;
+    }
+
+    @ModelAttribute
+    public void getUser(@RequestParam(value = "id", required = false) Integer id,
+                        Map<String, Object> map) {
+        if (id != null) {
+            User user = new User("Tom", "12456", "tom@aiguigu.com", 12);
+            System.out.println("从数据库中获取一个对象" + user);
+            map.put("user", user);
+        }
+
+    }
+
     @RequestMapping(value = "/testModelAttribute", method = RequestMethod.POST)
-    public String testModelAttribute(User user) {
+    public String testModelAttribute(@ModelAttribute("user") User user) {
         System.out.println("修改： " + user);
         return SUCCESS;
     }
 
-//    @RequestMapping("/testSessionAttributes")
-//    public String testSessionAttributes(Map<String, Object> map) {
-//        User user = new User(11, "Tom", "123456", "zy@111", 11);
-//        map.put("user", user);
-//        map.put("school", "ryan");
-//        return SUCCESS;
-//    }
-
+    @RequestMapping("/testSessionAttributes")
+    public String testSessionAttributes(Map<String, Object> map) {
+        User user = new User("Tom", "123456", "zy@111", 11);
+        map.put("user", user);
+        map.put("school", "ryan");
+        return SUCCESS;
+    }
 
     @RequestMapping("/testMap")
     public String testMap(Map<String, Object> map) {

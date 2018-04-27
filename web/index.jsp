@@ -12,6 +12,15 @@
 </head>
 <body>
 
+<a href="springmvc/testRedirect">test redirect</a>
+<br><br>
+
+<a href="springmvc/testView">testView</a>
+<br><br>
+
+<a href="springmvc/testViewAndViewResolver">Test ViewAndViewResolver</a>
+<br><br>
+
 
 <form action="springmvc/testModelAttribute" method="Post">
     <input type="hidden" name="id" value="1">
@@ -41,8 +50,8 @@
     password:<input type="text" name="password"/><br>
     email:<input type="text" name="email"/><br>
     age:<input type="text" name="age"><br>
-    city:<input type="text" name="address.city"><br>
-    province:<input type="text" name="address.province"><br>
+    <%--city:<input type="text" name="address.city"><br>--%>
+    <%--province:<input type="text" name="address.province"><br>--%>
     <input type="submit" value="submit">
 </form>
 <br><br>

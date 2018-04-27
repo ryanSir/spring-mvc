@@ -26,5 +26,9 @@ session user:${sessionScope.user}
 request school:${requestScope.school}
 <br><br>
 session school:${sessionScope.school}
+<br><br>
+abc user:${requestScope.user}
+<br><br>
+user user:${requestScope.user}
 </body>
 </html>

@@ -6,21 +6,19 @@ package com.spring.entities;
  */
 public class User {
     //    private Integer id;
-
     private String username;
     private String password;
     private String email;
-    private String age;
+    private int age;
 
     public User() {
     }
 
-    public User(String username, String password, String email, String age, Address address) {
+    public User(String username, String password, String email, int age) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.age = age;
-        this.address = address;
     }
 
     /**
@@ -32,10 +30,6 @@ public class User {
         return address;
     }
 
-    @Override
-    public String toString() {
-        return "User{" + "username='" + username + '\'' + ", password='" + password + '\'' + ", email='" + email + '\'' + ", age='" + age + '\'' + ", address=" + address + '}';
-    }
 
     /**
      * Setter method for property <tt>address</tt>.
@@ -102,22 +96,22 @@ public class User {
         this.email = email;
     }
 
-    /**
-     * Getter method for property <tt>age</tt>.
-     *
-     * @return property value of age
-     */
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    /**
-     * Setter method for property <tt>age</tt>.
-     *
-     * @param age value to be assigned to property age
-     */
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", age=" + age +
+                ", address=" + address +
+                '}';
+    }
 }
