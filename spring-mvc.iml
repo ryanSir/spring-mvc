@@ -23,7 +23,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../jar/commons-logging.jar!/" />
+          <root url="jar://$MODULE_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/lib/commons-logging.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -32,7 +32,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../jar/spring-aop-4.3.9.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/lib/spring-aop-4.3.9.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -41,7 +41,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../jar/spring-aspects-4.3.9.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/lib/spring-aspects-4.3.9.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -50,7 +50,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../jar/spring-beans-4.3.9.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/lib/spring-beans-4.3.9.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -59,7 +59,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../jar/spring-context-4.3.9.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/lib/spring-context-4.3.9.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -68,7 +68,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../jar/spring-context-support-4.3.9.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/lib/spring-context-support-4.3.9.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -77,7 +77,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../jar/spring-core-4.3.9.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/lib/spring-core-4.3.9.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -86,7 +86,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../jar/spring-expression-4.3.9.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/lib/spring-expression-4.3.9.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -95,7 +95,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../jar/spring-web-4.3.9.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/lib/spring-web-4.3.9.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -104,7 +104,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../jar/spring-webmvc-4.3.9.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/out/artifacts/spring_mvc_war_exploded/WEB-INF/lib/spring-webmvc-4.3.9.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

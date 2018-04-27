@@ -26,6 +26,7 @@ public class springMVCTest {
         System.out.println("testServletAPI, " + request + "," + response);
         out.write("hello springmvc");
 //        return SUCCESS;
+
     }
 
     @RequestMapping("/testPojo")
