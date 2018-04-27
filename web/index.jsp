@@ -11,6 +11,29 @@
     <title>spring-mvc</title>
 </head>
 <body>
+
+
+<form action="springmvc/testModelAttribute" method="Post">
+    <input type="hidden" name="id" value="1">
+    username:<input type="text" name="username" value="Tom"/>
+    <br>
+    email:<input type="text" name="email" value="tom@aa.com">
+    <br>
+    age:<input type="text" name="age" value="12">
+    <br>
+    <input type="submit" value="submit"/>
+</form>
+<br><br>
+
+<a href="springmvc/testSessionAttributes">test testSessionAttributes</a>
+<br><br>
+
+<a href="springmvc/testMap">test map</a>
+<br><br>
+
+<a href="springmvc/testModelAndView">test ModelAndView</a>
+<br><br>
+
 <a href="springmvc/testServletAPI">test ServletAPI</a>
 <br><br>
 <form action="springmvc/testPojo" method="post">

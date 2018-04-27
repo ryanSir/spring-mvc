@@ -5,10 +5,23 @@ package com.spring.entities;
  * @version $Id: User.Java, v 0.1 2018/4/18 14:29 zy28313 Exp $
  */
 public class User {
+    //    private Integer id;
+
     private String username;
     private String password;
     private String email;
     private String age;
+
+    public User() {
+    }
+
+    public User(String username, String password, String email, String age, Address address) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.age = age;
+        this.address = address;
+    }
 
     /**
      * Getter method for property <tt>address</tt>.
@@ -21,13 +34,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                ", age='" + age + '\'' +
-                ", address=" + address +
-                '}';
+        return "User{" + "username='" + username + '\'' + ", password='" + password + '\'' + ", email='" + email + '\'' + ", age='" + age + '\'' + ", address=" + address + '}';
     }
 
     /**
@@ -112,4 +119,5 @@ public class User {
     public void setAge(String age) {
         this.age = age;
     }
+
 }
