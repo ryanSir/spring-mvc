@@ -40,6 +40,7 @@ public class springMVCTest {
 //        return SUCCESS;
 //    }
 
+
     @RequestMapping("/testMap")
     public String testMap(Map<String, Object> map) {
         map.put("names", Arrays.asList("Tom", "Jerry", "mike"));
